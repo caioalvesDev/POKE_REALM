@@ -6,7 +6,7 @@
         <img src="./assets/pokemon-png-logo.webp"  alt="">
       </div>
       <input class="input is-rounded" type="text" placeholder="Buscar Pokemon pelo nome" v-model="busca">
-      <button class="button  is-fullwidth is-success" id="busca-btn" @click="buscar">Mudar Sprite</button>
+      <button class="button  is-fullwidth is-success" id="busca-btn" @click="buscar">Buscar Pokemon</button>
       <div v-for="(poke, index) in filteredpokemons" :key="poke.url">
           <Pokemon :name="poke.name" :url="poke.url" :num="index+1"/>
       </div>
